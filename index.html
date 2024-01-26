@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MscTech</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <label>
+        Başlangıç X:
+        <input type="number" id="startX" />
+      </label>
+      <label>
+        Başlangıç Y:
+        <input type="number" id="startY" />
+      </label>
+      <label>
+        Güzergah:
+        <input type="text" id="routeInput" />
+      </label>
+      <button onclick="handleCalculateRoute()">Varış Noktasını Hesapla</button>
+      <div>
+        <p>
+          başlangıç nokta x : <span id="startXResult"></span> başlangıç nokta y
+          : <span id="startYResult"></span>
+        </p>
+        <p>
+          son nokta x: <span id="finalXResult"></span> son nokta y:
+          <span id="finalYResult"></span>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
